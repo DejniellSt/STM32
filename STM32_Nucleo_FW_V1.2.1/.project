@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>STM32_Nucleo_FW_V1.2.1</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+		<nature>fr.ac6.mcu.ide.core.MCUFirmwareProjectNature</nature>
+	</natures>
+</projectDescription>

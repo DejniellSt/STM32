@@ -1,0 +1,2217 @@
+!SESSION 2019-12-04 19:47:25.277 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pl_PL
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+
+!ENTRY fr.ac6.mcu.ide 1 1 2019-12-04 19:48:00.598
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.core.net 1 0 2019-12-04 19:48:00.904
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2019-12-04 19:48:00.906
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.core.net 1 0 2019-12-04 19:48:00.928
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2019-12-04 19:48:00.938
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-12-04 19:48:13.289
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 2.0.4.v20170307-1435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:93)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.core.jobs 2 2 2019-12-04 19:49:20.588
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: fr.ac6.mcu.externaltools.internal.registry.MCUExternalToolsTool$1
+!SESSION 2019-12-04 19:52:07.221 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pl_PL
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+
+!ENTRY fr.ac6.mcu.ide 1 1 2019-12-04 19:52:27.320
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.core.net 1 0 2019-12-04 19:52:28.667
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2019-12-04 19:52:28.668
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.core.net 1 0 2019-12-04 19:52:28.694
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2019-12-04 19:52:28.694
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-12-04 19:52:37.930
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: java.util.concurrent.TimeoutException: Timed out waiting for  [STOPPING] to reach a terminal state. Current state: STOPPING
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:65)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:966)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.disposed(InjectorImpl.java:426)
+	at org.eclipse.e4.core.internal.di.Requestor.disposed(Requestor.java:154)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:78)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:111)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.handleInvalid(TrackableComputationExt.java:74)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:176)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:161)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:161)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:161)
+	at org.eclipse.e4.core.internal.contexts.osgi.EclipseContextOSGi.dispose(EclipseContextOSGi.java:106)
+	at org.eclipse.e4.core.internal.contexts.osgi.EclipseContextOSGi.bundleChanged(EclipseContextOSGi.java:139)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:903)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEventPrivileged(EquinoxEventPublisher.java:213)
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:120)
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:112)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor.publishModuleEvent(EquinoxContainerAdaptor.java:156)
+	at org.eclipse.osgi.container.Module.publishEvent(Module.java:476)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:634)
+	at org.eclipse.osgi.container.Module.stop(Module.java:498)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:202)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:165)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.TimeoutException: Timed out waiting for  [STOPPING] to reach a terminal state. Current state: STOPPING
+	at com.google.common.util.concurrent.AbstractService.awaitTerminated(AbstractService.java:322)
+	at com.google.common.util.concurrent.AbstractIdleService.awaitTerminated(AbstractIdleService.java:198)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.diStop(ServerConnection.java:402)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	... 25 more
+
+!ENTRY org.eclipse.core.jobs 2 2 2019-12-04 19:52:38.663
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.ui.internal.Workbench$55
+!SESSION 2019-12-10 17:43:49.929 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pl_PL
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+
+!ENTRY fr.ac6.mcu.ide 1 1 2019-12-10 17:44:31.642
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.core.net 1 0 2019-12-10 17:44:33.147
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2019-12-10 17:44:33.148
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.core.net 1 0 2019-12-10 17:44:33.225
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2019-12-10 17:44:33.225
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-12-10 17:44:53.852
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 2.0.4.v20170307-1435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:93)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-12-10 17:59:38.553
+!MESSAGE Indexed 'temp' (27 sources, 30 headers) in 5,35 sec: 4 027 declarations; 12 559 references; 10 unresolved inclusions; 17 syntax errors; 4 312 unresolved names (21%)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-10 18:00:15.278
+!MESSAGE Error: Cannot run program "make": Unknown reason
+!STACK 0
+java.io.IOException: Cannot run program "make": Unknown reason
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:128)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:72)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:753)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:487)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:399)
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-10 18:00:40.008
+!MESSAGE Error: Cannot run program "make": Unknown reason
+!STACK 0
+java.io.IOException: Cannot run program "make": Unknown reason
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:128)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:72)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:753)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:487)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:406)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:285)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-10 18:03:49.349
+!MESSAGE Error: Cannot run program "make": Unknown reason
+!STACK 0
+java.io.IOException: Cannot run program "make": Unknown reason
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:128)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:72)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:753)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:487)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:399)
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-10 18:06:45.345
+!MESSAGE Error: Cannot run program "make": Unknown reason
+!STACK 0
+java.io.IOException: Cannot run program "make": Unknown reason
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:128)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:72)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:753)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:487)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:399)
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-10 18:06:45.706
+!MESSAGE Error: Cannot run program "make": Unknown reason
+!STACK 0
+java.io.IOException: Cannot run program "make": Unknown reason
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:128)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:72)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:753)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:487)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:399)
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-12-10 18:07:06.703
+!MESSAGE Indexed 'test' (27 sources, 30 headers) in 2,53 sec: 4 027 declarations; 12 559 references; 10 unresolved inclusions; 17 syntax errors; 4 312 unresolved names (21%)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-10 18:07:44.413
+!MESSAGE Error: Cannot run program "make": Unknown reason
+!STACK 0
+java.io.IOException: Cannot run program "make": Unknown reason
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:128)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:72)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:753)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:487)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:399)
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-10 18:07:52.437
+!MESSAGE Error: Cannot run program "make": Unknown reason
+!STACK 0
+java.io.IOException: Cannot run program "make": Unknown reason
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:128)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:72)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:753)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:487)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:406)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:285)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2019-12-10 18:10:16.003 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pl_PL
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+
+!ENTRY fr.ac6.mcu.ide 1 1 2019-12-10 18:10:33.318
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.core.net 1 0 2019-12-10 18:10:34.343
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2019-12-10 18:10:34.344
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.core.net 1 0 2019-12-10 18:10:34.380
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2019-12-10 18:10:34.380
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-12-10 18:10:55.375
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 2.0.4.v20170307-1435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:93)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-12-10 18:12:02.490
+!MESSAGE Error: Cannot run program "make": Unknown reason
+!STACK 0
+java.io.IOException: Cannot run program "make": Unknown reason
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:128)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:72)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:753)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:487)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:399)
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-12-10 18:12:12.790
+!MESSAGE Indexed 'test' (27 sources, 30 headers) in 6,43 sec: 4 027 declarations; 12 559 references; 10 unresolved inclusions; 17 syntax errors; 4 312 unresolved names (21%)
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-12-10 18:45:43.808
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-12-10 18:45:43.809
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+!SESSION 2020-01-04 14:32:33.115 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pl_PL
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+
+!ENTRY fr.ac6.mcu.ide 1 1 2020-01-04 14:33:14.134
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-04 14:33:14.488
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-04 14:33:14.489
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-04 14:33:14.616
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-04 14:33:14.617
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-01-04 14:33:19.679
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-01-04 14:33:19.683
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-01-04 14:33:36.787
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 2.0.4.v20170307-1435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:93)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2020-01-04 14:43:27.913
+!MESSAGE Could not determine GDB version using command: /home/laseczka/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/arm-none-eabi-gdb --version
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2020-01-04 14:43:29.721
+!MESSAGE Could not determine GDB version using command: /home/laseczka/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/arm-none-eabi-gdb --version
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2020-01-04 14:44:02.806
+!MESSAGE Could not determine GDB version using command: /home/laseczka/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/arm-none-eabi-gdb --version
+
+!ENTRY org.eclipse.core.jobs 2 2 2020-01-04 14:50:36.056
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.cdt.dsf.gdb.internal.ui.console.GdbBasicCliConsole$InputReadJob
+!SESSION 2020-01-04 14:55:31.049 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pl_PL
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+
+!ENTRY fr.ac6.mcu.ide 1 1 2020-01-04 14:55:57.457
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-04 14:55:58.255
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-04 14:55:58.255
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-04 14:55:58.291
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-04 14:55:58.292
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-01-04 14:56:18.313
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 2.0.4.v20170307-1435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:93)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-01-04 14:57:27.728
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-01-04 14:57:27.729
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY fr.ac6.mcu.debug 4 5012 2020-01-04 14:57:39.656
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+-target-select remote localhost:3333
+
+Error message from debugger back end:
+Remote communication error.  Target disconnected.: Połączenie zerwane przez drugą stronę.
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:111)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launchDebugSession(MCUGDBJtagDSFLaunchConfigurationDelegate.java:281)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:101)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:90)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launch(MCUGDBJtagDSFLaunchConfigurationDelegate.java:319)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.Exception: Remote communication error.  Target disconnected.: Połączenie zerwane przez drugą stronę.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2020-01-04 14:57:39.662
+!MESSAGE Failed to execute MI command:
+-target-select remote localhost:3333
+
+Error message from debugger back end:
+Remote communication error.  Target disconnected.: Połączenie zerwane przez drugą stronę.
+!STACK 0
+java.lang.Exception: Remote communication error.  Target disconnected.: Połączenie zerwane przez drugą stronę.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.jface 2 0 2020-01-04 15:04:00.937
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-01-04 15:04:00.937
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.text.c.toggle.comment,Toggle Comment,
+		Toggle comment the selected lines,
+		Category(org.eclipse.cdt.ui.category.source,Source,Source commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1130cad1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.copy,Copy,
+		,
+		Category(org.eclipse.tm.terminal.category1,Terminal view commands,Terminal view commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2e3f9d29,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.tm.terminal.EditContext,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-01-04 15:04:00.938
+!MESSAGE A conflict occurred for ALT+C:
+Binding(ALT+C,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.refactor.extract.constant,Extract Constant - Refactoring ,
+		Extracts a constant for the selected expression,
+		Category(org.eclipse.cdt.ui.category.refactoring,Refactor - C++,C/C++ Refactorings,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1525f2da,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+C,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.command1,Terminal view insert,
+		,
+		Category(org.eclipse.tm.terminal.category1,Terminal view commands,Terminal view commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@161c4d43,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.tm.terminal.TerminalContext,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-01-04 15:04:00.938
+!MESSAGE A conflict occurred for ALT+ARROW_UP:
+Binding(ALT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.maximize,Maximize Active View or Editor,
+		,
+		Category(org.eclipse.tm.terminal.category1,Terminal view commands,Terminal view commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@16d7b13,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.tm.terminal.EditContext,,,system)
+Binding(ALT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.moveLineUp,Move Lines Up,
+		Moves the selected lines up,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@53e968c2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY fr.ac6.mcu.debug 4 0 2020-01-04 15:43:20.033
+!MESSAGE Błąd wejścia/wyjścia in nativeavailable
+!STACK 0
+java.io.IOException: Błąd wejścia/wyjścia in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1568)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialReader.waitForOuptut(SerialConsoleManager.java:500)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialReader.run(SerialConsoleManager.java:457)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY org.eclipse.core.jobs 2 2 2020-01-04 15:48:41.589
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater$6
+!SESSION 2020-01-04 15:48:42.633 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pl_PL
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -data file:/home/laseczka/workspace/ -os linux -ws gtk -arch x86_64 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-04 15:49:15.376
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-04 15:49:15.396
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-04 15:49:15.430
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-04 15:49:15.431
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY fr.ac6.mcu.ide 1 1 2020-01-04 15:49:31.169
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-01-04 15:49:36.997
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 2.0.4.v20170307-1435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:93)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-01-04 15:49:37.266
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-01-04 15:49:37.267
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.core.jobs 2 2 2020-01-05 00:57:53.617
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob
+!SESSION 2020-02-20 12:18:48.633 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pl_PL
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.net 1 0 2020-02-20 12:19:31.365
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2020-02-20 12:19:31.412
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.core.net 1 0 2020-02-20 12:19:31.462
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2020-02-20 12:19:31.462
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY fr.ac6.mcu.ide 1 1 2020-02-20 12:19:51.674
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-02-20 12:19:53.433
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 2.0.4.v20170307-1435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:93)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2020-02-20 12:24:19.714
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2020-02-20 12:24:19.714
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.714
+!MESSAGE "OpenSTM32 Help Documentation" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.714
+!MESSAGE "OpenSTM32 Remote debugging support" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.714
+!MESSAGE "External Tools" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.715
+!MESSAGE "OpenSTM32 IDE" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.715
+!MESSAGE "OpenSTM32 Linker Script editor" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.715
+!MESSAGE "ARM Compiler for MCU" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.715
+!MESSAGE "OpenOCD" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.715
+!MESSAGE "MCU Utils" will be ignored because a newer version is already installed. 
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2020-02-20 12:24:19.715
+!MESSAGE Cannot complete the install because some dependencies are not satisfiable
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2020-02-20 12:24:19.715
+!MESSAGE fr.ac6.feature.mcu.externaltools.armnone.linux32.feature.group [1.11.0.201610101318] cannot be installed in this environment because its filter is not applicable.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2020-02-20 12:24:19.784
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2020-02-20 12:24:19.784
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.785
+!MESSAGE "OpenSTM32 Help Documentation" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.785
+!MESSAGE "OpenSTM32 Remote debugging support" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.785
+!MESSAGE "External Tools" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.786
+!MESSAGE "OpenSTM32 IDE" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.786
+!MESSAGE "OpenSTM32 Linker Script editor" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.786
+!MESSAGE "ARM Compiler for MCU" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.786
+!MESSAGE "OpenOCD" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.786
+!MESSAGE "MCU Utils" will be ignored because a newer version is already installed. 
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2020-02-20 12:24:19.787
+!MESSAGE Cannot complete the install because some dependencies are not satisfiable
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2020-02-20 12:24:19.787
+!MESSAGE fr.ac6.feature.mcu.externaltools.armnone.linux32.feature.group [1.11.0.201610101318] cannot be installed in this environment because its filter is not applicable.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2020-02-20 12:24:19.881
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2020-02-20 12:24:19.881
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.881
+!MESSAGE "OpenSTM32 Help Documentation" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.882
+!MESSAGE "OpenSTM32 Remote debugging support" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.882
+!MESSAGE "External Tools" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.882
+!MESSAGE "OpenSTM32 IDE" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.883
+!MESSAGE "OpenSTM32 Linker Script editor" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.883
+!MESSAGE "ARM Compiler for MCU" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.883
+!MESSAGE "OpenOCD" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.884
+!MESSAGE "MCU Utils" will be ignored because a newer version is already installed. 
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2020-02-20 12:24:19.884
+!MESSAGE Cannot complete the install because some dependencies are not satisfiable
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2020-02-20 12:24:19.884
+!MESSAGE fr.ac6.feature.mcu.externaltools.armnone.linux32.feature.group [1.11.0.201610101318] cannot be installed in this environment because its filter is not applicable.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2020-02-20 12:24:19.885
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2020-02-20 12:24:19.885
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.885
+!MESSAGE "OpenSTM32 Help Documentation" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.885
+!MESSAGE "OpenSTM32 Remote debugging support" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.885
+!MESSAGE "External Tools" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.886
+!MESSAGE "OpenSTM32 IDE" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.886
+!MESSAGE "OpenSTM32 Linker Script editor" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.886
+!MESSAGE "ARM Compiler for MCU" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.886
+!MESSAGE "OpenOCD" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2020-02-20 12:24:19.886
+!MESSAGE "MCU Utils" will be ignored because a newer version is already installed. 
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2020-02-20 12:24:19.886
+!MESSAGE Cannot complete the install because some dependencies are not satisfiable
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2020-02-20 12:24:19.886
+!MESSAGE fr.ac6.feature.mcu.externaltools.armnone.linux32.feature.group [1.11.0.201610101318] cannot be installed in this environment because its filter is not applicable.
+!SESSION 2020-02-20 12:28:09.829 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pl_PL
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -data file:/home/laseczka/workspace/ -os linux -ws gtk -arch x86_64 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.net 1 0 2020-02-20 12:28:29.693
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2020-02-20 12:28:29.731
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.core.net 1 0 2020-02-20 12:28:29.789
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2020-02-20 12:28:29.789
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY fr.ac6.mcu.ide 1 1 2020-02-20 12:28:47.200
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-02-20 12:28:50.633
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 2.0.4.v20170307-1435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:93)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2020-02-20 12:40:15.571
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at jar:file:/home/laseczka/Pobrane/en.stm32cubemx_v5-5-0.zip!/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:395)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:340)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:239)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:83)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2020-02-20 12:40:15.572
+!MESSAGE No repository found at jar:file:/home/laseczka/Pobrane/en.stm32cubemx_v5-5-0.zip!/.
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-02-20 12:50:45.131
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-02-20 12:50:45.133
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-02-20 12:58:36.063
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-02-20 12:58:38.136
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-02-20 12:58:40.232
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-02-20 12:58:42.308
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-02-20 12:58:44.379
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-02-20 12:58:46.490
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-02-20 12:58:48.523
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+!SESSION 2020-02-20 13:25:34.577 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pl_PL
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.net 1 0 2020-02-20 13:25:57.850
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2020-02-20 13:25:57.904
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.core.net 1 0 2020-02-20 13:25:58.076
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2020-02-20 13:25:58.077
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY fr.ac6.mcu.ide 1 1 2020-02-20 13:26:16.028
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-02-20 13:26:18.835
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 2.0.4.v20170307-1435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:93)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-02-20 13:26:55.264
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-02-20 13:26:55.266
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2020-02-20 13:28:08.342
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at jar:file:/home/laseczka/Pobrane/en.stm32cubemx_v5-5-0.zip!/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:395)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:340)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:239)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:83)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2020-02-20 13:28:08.343
+!MESSAGE No repository found at jar:file:/home/laseczka/Pobrane/en.stm32cubemx_v5-5-0.zip!/.
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-02-20 13:38:55.666
+!MESSAGE Indexed 'test1' (27 sources, 30 headers) in 5,05 sec: 4 027 declarations; 12 559 references; 10 unresolved inclusions; 17 syntax errors; 4 312 unresolved names (21%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-02-20 13:44:36.794
+!MESSAGE Indexed 'test11' (27 sources, 30 headers) in 2,78 sec: 4 027 declarations; 12 559 references; 10 unresolved inclusions; 17 syntax errors; 4 312 unresolved names (21%)
+!SESSION 2020-02-20 13:58:33.113 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pl_PL
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.net 1 0 2020-02-20 13:59:19.712
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2020-02-20 13:59:19.761
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.core.net 1 0 2020-02-20 13:59:19.817
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2020-02-20 13:59:19.817
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY fr.ac6.mcu.ide 1 1 2020-02-20 13:59:37.575
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-02-20 13:59:40.718
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 2.0.4.v20170307-1435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:93)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-02-20 14:03:08.862
+!MESSAGE Indexed 'siemanko' (27 sources, 30 headers) in 5,85 sec: 4 027 declarations; 12 559 references; 10 unresolved inclusions; 17 syntax errors; 4 312 unresolved names (21%)
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-02-20 14:04:50.983
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-02-20 14:04:50.987
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-02-20 14:05:25.314
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-02-20 14:05:27.355
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-02-20 14:05:29.434
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-02-20 14:05:31.510
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-02-20 14:05:33.586
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-02-20 14:05:35.659
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-02-20 14:05:37.685
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 105 2020-02-20 14:10:46.003
+!MESSAGE Program file not specified
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 105 2020-02-20 14:10:46.004
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 105 2020-02-20 14:10:56.504
+!MESSAGE Program file not specified
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 105 2020-02-20 14:10:56.504
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2020-02-20 14:12:28.372
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: /home/laseczka/workspace/siemanko/Debug\siemanko.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:126)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:292)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launchDebugSession(MCUGDBJtagDSFLaunchConfigurationDelegate.java:205)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:101)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:90)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launch(MCUGDBJtagDSFLaunchConfigurationDelegate.java:319)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2020-02-20 14:12:28.372
+!MESSAGE /home/laseczka/workspace/siemanko/Debug\siemanko.elf not found
+!STACK 0
+java.io.FileNotFoundException: /home/laseczka/workspace/siemanko/Debug\siemanko.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:126)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:292)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launchDebugSession(MCUGDBJtagDSFLaunchConfigurationDelegate.java:205)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:101)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:90)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launch(MCUGDBJtagDSFLaunchConfigurationDelegate.java:319)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2020-02-20 14:12:44.700
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: /home/laseczka/workspace/siemanko/Debug\siemanko.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:126)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:292)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launchDebugSession(MCUGDBJtagDSFLaunchConfigurationDelegate.java:205)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:101)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:90)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launch(MCUGDBJtagDSFLaunchConfigurationDelegate.java:319)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2020-02-20 14:12:44.701
+!MESSAGE /home/laseczka/workspace/siemanko/Debug\siemanko.elf not found
+!STACK 0
+java.io.FileNotFoundException: /home/laseczka/workspace/siemanko/Debug\siemanko.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:126)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:292)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launchDebugSession(MCUGDBJtagDSFLaunchConfigurationDelegate.java:205)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:101)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:90)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launch(MCUGDBJtagDSFLaunchConfigurationDelegate.java:319)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY fr.ac6.mcu.debug 4 5012 2020-02-20 14:18:35.493
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+-target-select remote localhost:3333
+
+Error message from debugger back end:
+Remote communication error.  Target disconnected.: Połączenie zerwane przez drugą stronę.
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:111)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launchDebugSession(MCUGDBJtagDSFLaunchConfigurationDelegate.java:281)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:101)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:90)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launch(MCUGDBJtagDSFLaunchConfigurationDelegate.java:319)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.Exception: Remote communication error.  Target disconnected.: Połączenie zerwane przez drugą stronę.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2020-02-20 14:18:35.495
+!MESSAGE Failed to execute MI command:
+-target-select remote localhost:3333
+
+Error message from debugger back end:
+Remote communication error.  Target disconnected.: Połączenie zerwane przez drugą stronę.
+!STACK 0
+java.lang.Exception: Remote communication error.  Target disconnected.: Połączenie zerwane przez drugą stronę.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY fr.ac6.mcu.debug 4 5012 2020-02-20 14:19:01.458
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+-target-select remote localhost:3333
+
+Error message from debugger back end:
+Remote communication error.  Target disconnected.: Przerwany potok.
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:111)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launchDebugSession(MCUGDBJtagDSFLaunchConfigurationDelegate.java:281)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:101)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:90)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launch(MCUGDBJtagDSFLaunchConfigurationDelegate.java:319)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.Exception: Remote communication error.  Target disconnected.: Przerwany potok.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2020-02-20 14:19:01.459
+!MESSAGE Failed to execute MI command:
+-target-select remote localhost:3333
+
+Error message from debugger back end:
+Remote communication error.  Target disconnected.: Przerwany potok.
+!STACK 0
+java.lang.Exception: Remote communication error.  Target disconnected.: Przerwany potok.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2020-02-20 14:21:48.226
+!MESSAGE No repository found at jar:file:/home/laseczka/Pobrane/eclipseee/en.stm32cubemx_v5-5-0.zip!/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2020-02-20 14:22:31.873
+!MESSAGE No repository found at jar:file:/home/laseczka/Pobrane/en.stm32cubemx_v5-5-0.zip!/.
+
+!ENTRY fr.ac6.mcu.debug 4 0 2020-02-20 14:22:55.602
+!MESSAGE Błąd wejścia/wyjścia in nativeavailable
+!STACK 0
+java.io.IOException: Błąd wejścia/wyjścia in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1568)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialReader.waitForOuptut(SerialConsoleManager.java:500)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialReader.run(SerialConsoleManager.java:457)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY org.eclipse.core.jobs 2 2 2020-02-20 14:22:56.222
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob
+
+!ENTRY org.eclipse.core.jobs 2 2 2020-02-20 14:22:56.224
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader
+!SESSION 2020-04-16 21:57:24.007 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pl_PL
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.net 1 0 2020-04-16 21:58:08.548
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2020-04-16 21:58:08.591
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.core.net 1 0 2020-04-16 21:58:08.775
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2020-04-16 21:58:08.775
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-04-16 21:58:28.869
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 2.0.4.v20170307-1435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:93)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY fr.ac6.mcu.ide 1 1 2020-04-16 21:58:30.049
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-04-16 22:04:24.494
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-04-16 22:04:24.496
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2020-04-16 22:08:13.024
+!MESSAGE No repository found at jar:file:/home/laseczka/Pobrane/eclipseee/en.stm32cubemx_v5-5-0.zip!/.
+
+!ENTRY fr.ac6.mcu.debug 4 0 2020-04-16 22:08:18.261
+!MESSAGE Błąd wejścia/wyjścia in nativeavailable
+!STACK 0
+java.io.IOException: Błąd wejścia/wyjścia in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1568)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialReader.waitForOuptut(SerialConsoleManager.java:500)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialReader.run(SerialConsoleManager.java:457)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2020-04-16 22:08:54.457
+!MESSAGE No repository found at jar:file:/home/laseczka/Pobrane/en.stm32cubemx_v5-5-0.zip!/.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2020-04-16 22:09:39.071
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at jar:file:/home/laseczka/Pobrane/eclipseee/en.stm32cubemx_v5-5-0.zip!/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:395)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:340)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:239)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:83)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2020-04-16 22:09:39.072
+!MESSAGE No repository found at jar:file:/home/laseczka/Pobrane/eclipseee/en.stm32cubemx_v5-5-0.zip!/.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2020-04-16 22:09:39.127
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at jar:file:/home/laseczka/Pobrane/en.stm32cubemx_v5-5-0.zip!/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:395)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:340)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:239)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:83)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2020-04-16 22:09:39.127
+!MESSAGE No repository found at jar:file:/home/laseczka/Pobrane/en.stm32cubemx_v5-5-0.zip!/.
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-04-16 22:12:01.125
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-04-16 22:12:03.150
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-04-16 22:12:05.225
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-04-16 22:12:07.297
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-04-16 22:12:09.366
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-04-16 22:12:11.440
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-04-16 22:12:13.490
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-04-16 22:12:15.565
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-04-16 22:23:54.881
+!MESSAGE Error: Cannot run program "perf": Unknown reason
+!STACK 0
+java.io.IOException: Cannot run program "perf": Unknown reason
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.linuxtools.internal.profiling.launch.LocalLauncher.execute(LocalLauncher.java:38)
+	at org.eclipse.linuxtools.tools.launch.core.factory.RuntimeProcessFactory.exec(RuntimeProcessFactory.java:287)
+	at org.eclipse.linuxtools.tools.launch.core.factory.RuntimeProcessFactory.exec(RuntimeProcessFactory.java:232)
+	at org.eclipse.linuxtools.tools.launch.core.factory.RuntimeProcessFactory.exec(RuntimeProcessFactory.java:180)
+	at org.eclipse.linuxtools.tools.launch.core.factory.RuntimeProcessFactory.exec(RuntimeProcessFactory.java:165)
+	at org.eclipse.linuxtools.internal.perf.PerfCore.checkPerfInPath(PerfCore.java:238)
+	at org.eclipse.linuxtools.internal.perf.launch.PerfLaunchConfigDelegate.launch(PerfLaunchConfigDelegate.java:96)
+	at org.eclipse.linuxtools.internal.profiling.launch.provider.launch.ProviderLaunchConfigurationDelegate.launch(ProviderLaunchConfigurationDelegate.java:89)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jface 2 0 2020-04-16 22:25:39.672
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-04-16 22:25:39.672
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.text.c.toggle.comment,Toggle Comment,
+		Toggle comment the selected lines,
+		Category(org.eclipse.cdt.ui.category.source,Source,Source commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@51f3efe,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.copy,Copy,
+		,
+		Category(org.eclipse.tm.terminal.category1,Terminal view commands,Terminal view commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6051f3f3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.tm.terminal.EditContext,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-04-16 22:25:39.672
+!MESSAGE A conflict occurred for ALT+C:
+Binding(ALT+C,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.refactor.extract.constant,Extract Constant - Refactoring ,
+		Extracts a constant for the selected expression,
+		Category(org.eclipse.cdt.ui.category.refactoring,Refactor - C++,C/C++ Refactorings,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@14f57d5a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+C,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.command1,Terminal view insert,
+		,
+		Category(org.eclipse.tm.terminal.category1,Terminal view commands,Terminal view commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@65c0214e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.tm.terminal.TerminalContext,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-04-16 22:25:39.672
+!MESSAGE A conflict occurred for ALT+ARROW_UP:
+Binding(ALT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.maximize,Maximize Active View or Editor,
+		,
+		Category(org.eclipse.tm.terminal.category1,Terminal view commands,Terminal view commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@19d40bc6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.tm.terminal.EditContext,,,system)
+Binding(ALT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.moveLineUp,Move Lines Up,
+		Moves the selected lines up,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7675bd64,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.cdt.launch 4 104 2020-04-16 22:28:12.335
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: /home/laseczka/workspace/siemanko/Debug/siemanko.elf not found
+	at org.eclipse.cdt.launch.AbstractCLaunchDelegate2.verifyProgramPath(AbstractCLaunchDelegate2.java:684)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.checkBinaryDetails(LocalRunLaunchDelegate.java:266)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.runLocalApplication(LocalRunLaunchDelegate.java:88)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.launch(LocalRunLaunchDelegate.java:76)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.launch 4 104 2020-04-16 22:28:12.335
+!MESSAGE /home/laseczka/workspace/siemanko/Debug/siemanko.elf not found
+!STACK 0
+java.io.FileNotFoundException: /home/laseczka/workspace/siemanko/Debug/siemanko.elf not found
+	at org.eclipse.cdt.launch.AbstractCLaunchDelegate2.verifyProgramPath(AbstractCLaunchDelegate2.java:684)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.checkBinaryDetails(LocalRunLaunchDelegate.java:266)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.runLocalApplication(LocalRunLaunchDelegate.java:88)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.launch(LocalRunLaunchDelegate.java:76)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2020-04-16 22:38:14.863
+!MESSAGE An internal error occurred during: "Disconnecting".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$2.run(TerminalConsoleConnector.java:168)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2020-04-16 23:16:56.143 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pl_PL
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.net 1 0 2020-04-16 23:17:19.058
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2020-04-16 23:17:19.078
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.core.net 1 0 2020-04-16 23:17:19.152
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2020-04-16 23:17:19.152
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY fr.ac6.mcu.ide 1 1 2020-04-16 23:17:36.355
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-04-16 23:17:40.285
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 2.0.4.v20170307-1435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:93)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-04-16 23:18:39.508
+!MESSAGE Error: Cannot run program "arm-none-eabi-gcc": Unknown reason
+!STACK 0
+java.io.IOException: Cannot run program "arm-none-eabi-gcc": Unknown reason
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-04-16 23:18:39.564
+!MESSAGE Error: Cannot run program "arm-none-eabi-g++": Unknown reason
+!STACK 0
+java.io.IOException: Cannot run program "arm-none-eabi-g++": Unknown reason
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-04-16 23:18:39.579
+!MESSAGE Error: Cannot run program "arm-none-eabi-gcc": Unknown reason
+!STACK 0
+java.io.IOException: Cannot run program "arm-none-eabi-gcc": Unknown reason
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-04-16 23:18:39.590
+!MESSAGE Error: Cannot run program "arm-none-eabi-g++": Unknown reason
+!STACK 0
+java.io.IOException: Cannot run program "arm-none-eabi-g++": Unknown reason
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-04-16 23:18:39.608
+!MESSAGE Error: Cannot run program "arm-none-eabi-gcc": Unknown reason
+!STACK 0
+java.io.IOException: Cannot run program "arm-none-eabi-gcc": Unknown reason
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-04-16 23:18:39.627
+!MESSAGE Error: Cannot run program "arm-none-eabi-g++": Unknown reason
+!STACK 0
+java.io.IOException: Cannot run program "arm-none-eabi-g++": Unknown reason
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-04-16 23:18:39.652
+!MESSAGE Error: Cannot run program "arm-none-eabi-gcc": Unknown reason
+!STACK 0
+java.io.IOException: Cannot run program "arm-none-eabi-gcc": Unknown reason
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-04-16 23:18:39.665
+!MESSAGE Error: Cannot run program "arm-none-eabi-g++": Unknown reason
+!STACK 0
+java.io.IOException: Cannot run program "arm-none-eabi-g++": Unknown reason
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-04-16 23:18:40.027
+!MESSAGE Indexed 'hello_hoe' (1 sources, 0 headers) in 0,295 sec: 1 declarations; 0 references; 1 unresolved inclusions; 0 syntax errors; 3 unresolved names (75%)
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-04-16 23:18:46.538
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-04-16 23:18:46.539
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+!SESSION 2020-04-21 08:14:36.821 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pl_PL
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.net 1 0 2020-04-21 08:15:37.952
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2020-04-21 08:15:37.992
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.core.net 1 0 2020-04-21 08:15:38.078
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2020-04-21 08:15:38.078
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY fr.ac6.mcu.ide 1 1 2020-04-21 08:15:58.533
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-04-21 08:15:59.595
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 2.0.4.v20170307-1435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:93)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2020-04-21 09:04:09.892
+!MESSAGE No repository found at jar:file:/home/laseczka/Pobrane/eclipseee/en.stm32cubemx_v5-5-0.zip!/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2020-04-21 09:04:53.753
+!MESSAGE No repository found at jar:file:/home/laseczka/Pobrane/en.stm32cubemx_v5-5-0.zip!/.
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-04-21 11:30:50.593
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-04-21 11:30:52.631
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-04-21 11:30:54.713
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-04-21 11:30:56.790
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-04-21 11:30:58.863
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-04-21 11:31:19.019
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-04-21 11:31:19.022
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-04-21 11:48:53.007
+!MESSAGE Indexed 'test' (27 sources, 30 headers) in 4,6 sec: 4 036 declarations; 12 695 references; 13 unresolved inclusions; 17 syntax errors; 4 339 unresolved names (21%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-04-21 11:51:36.852
+!MESSAGE Indexed 'gowno' (27 sources, 30 headers) in 3,82 sec: 4 027 declarations; 12 559 references; 10 unresolved inclusions; 17 syntax errors; 4 312 unresolved names (21%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-04-21 11:55:15.444
+!MESSAGE Indexed 'test1' (27 sources, 30 headers) in 2,2 sec: 4 031 declarations; 12 576 references; 11 unresolved inclusions; 17 syntax errors; 4 327 unresolved names (21%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-04-21 12:07:37.941
+!MESSAGE Indexed 'i2c' (27 sources, 30 headers) in 1,48 sec: 4 027 declarations; 12 559 references; 10 unresolved inclusions; 17 syntax errors; 4 312 unresolved names (21%)
+!SESSION 2020-04-22 11:58:13.105 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pl_PL
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.net 1 0 2020-04-22 11:58:52.892
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2020-04-22 11:58:52.925
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.core.net 1 0 2020-04-22 11:58:53.013
+!MESSAGE System property http.proxyHost is not set but should be appgw.gnb.st.com.
+
+!ENTRY org.eclipse.core.net 1 0 2020-04-22 11:58:53.014
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY fr.ac6.mcu.ide 1 1 2020-04-22 11:59:12.463
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-04-22 11:59:14.448
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 2.0.4.v20170307-1435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:93)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-04-22 11:59:31.504
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-04-22 11:59:31.505
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2020-04-22 12:19:47.271
+!MESSAGE No repository found at jar:file:/home/laseczka/Pobrane/eclipseee/en.stm32cubemx_v5-5-0.zip!/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2020-04-22 12:20:53.296
+!MESSAGE No repository found at jar:file:/home/laseczka/Pobrane/en.stm32cubemx_v5-5-0.zip!/.
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-04-22 12:33:33.815
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-04-22 12:33:35.848
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-04-22 12:33:37.974
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-04-22 12:33:39.996
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-04-22 12:33:42.024
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-04-22 12:33:44.103
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-04-22 12:33:46.127
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-04-22 12:34:40.575
+!MESSAGE Indexed 'adc' (29 sources, 30 headers) in 7,18 sec: 4 044 declarations; 12 762 references; 10 unresolved inclusions; 17 syntax errors; 4 387 unresolved names (21%)
+
+!ENTRY fr.ac6.mcu.debug 4 0 2020-04-22 13:12:56.244
+!MESSAGE Błąd wejścia/wyjścia in nativeavailable
+!STACK 0
+java.io.IOException: Błąd wejścia/wyjścia in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1568)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialReader.waitForOuptut(SerialConsoleManager.java:500)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialReader.run(SerialConsoleManager.java:486)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-04-22 13:17:10.700
+!MESSAGE Indexed 'dma' (27 sources, 30 headers) in 2,58 sec: 4 027 declarations; 12 559 references; 10 unresolved inclusions; 17 syntax errors; 4 312 unresolved names (21%)
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-04-22 13:23:27.049
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-04-22 13:23:29.122
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2020-04-22 13:23:31.195
+!MESSAGE gnu.io.PortInUseException: Unknown Linux Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Linux Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Linux Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-04-22 13:31:35.835
+!MESSAGE Indexed 'pwm' (27 sources, 30 headers) in 2,92 sec: 4 027 declarations; 12 559 references; 10 unresolved inclusions; 17 syntax errors; 4 312 unresolved names (21%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-04-22 13:45:42.757
+!MESSAGE Indexed 'hello_stm_uart' (27 sources, 30 headers) in 1,74 sec: 4 027 declarations; 12 559 references; 10 unresolved inclusions; 17 syntax errors; 4 312 unresolved names (21%)
+
+!ENTRY fr.ac6.mcu.debug 4 0 2020-04-22 13:52:14.409
+!MESSAGE Błąd wejścia/wyjścia in nativeavailable
+!STACK 0
+java.io.IOException: Błąd wejścia/wyjścia in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1568)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialReader.waitForOuptut(SerialConsoleManager.java:500)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialReader.run(SerialConsoleManager.java:457)
+	at java.lang.Thread.run(Thread.java:748)

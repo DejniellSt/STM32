@@ -1,0 +1,12 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:test Run (1),org.eclipse.launchbar.core.descriptorType.default\:test.elf,org.eclipse.launchbar.core.descriptorType.default\:test11 Run,org.eclipse.launchbar.core.descriptorType.default\:New_configuration,org.eclipse.launchbar.core.descriptorType.default\:siemanko.elf,org.eclipse.launchbar.core.descriptorType.default\:siemanko Run,org.eclipse.launchbar.core.descriptorType.default\:siemanko Debug,org.eclipse.launchbar.core.descriptorType.default\:test Run,org.eclipse.launchbar.core.descriptorType.default\:gowno Run,org.eclipse.launchbar.core.descriptorType.default\:test1 Run,org.eclipse.launchbar.core.descriptorType.default\:dma Run,org.eclipse.launchbar.core.descriptorType.default\:pwm Run,org.eclipse.launchbar.core.descriptorType.default\:hello_stm_uart Run,org.eclipse.launchbar.core.descriptorType.default\:adc Run,org.eclipse.launchbar.core.descriptorType.default\:i2c Run
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:New_configuration/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:New_configuration/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:siemanko\ Debug/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:siemanko.elf/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:test\ Run/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:test\ Run/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:test.elf/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:test.elf/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

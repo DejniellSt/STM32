@@ -1,0 +1,15 @@
+11:50:36 **** Incremental Build of configuration Debug for project test ****
+make -j2 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/laseczka/workspace/test/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -I"/home/laseczka/workspace/test/Utilities/STM32F1xx-Nucleo" -I"/home/laseczka/workspace/test/StdPeriph_Driver/inc" -I"/home/laseczka/workspace/test/inc" -I"/home/laseczka/workspace/test/CMSIS/device" -I"/home/laseczka/workspace/test/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:3:10: fatal error: lsm303d.h: No such file or directory
+ #include "lsm303d.h"
+          ^~~~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] Error 1
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+
+11:50:37 Build Finished (took 1s.89ms)
+

@@ -1,0 +1,6 @@
+13:50:10 **** Incremental Build of configuration Debug for project adc ****
+make -j2 all 
+make: Nie ma nic do zrobienia w 'all'.
+
+13:50:10 Build Finished (took 797ms)
+

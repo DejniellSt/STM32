@@ -1,0 +1,38 @@
+11:54:16 **** Incremental Build of configuration Debug for project gowno ****
+make -j2 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/laseczka/workspace/gowno/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -I"/home/laseczka/workspace/gowno/Utilities/STM32F1xx-Nucleo" -I"/home/laseczka/workspace/gowno/StdPeriph_Driver/inc" -I"/home/laseczka/workspace/gowno/inc" -I"/home/laseczka/workspace/gowno/CMSIS/device" -I"/home/laseczka/workspace/gowno/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:58:21: warning: implicit declaration of function 'lsm_read_reg'; did you mean '_fread_r'? [-Wimplicit-function-declaration]
+  uint8_t who_am_i = lsm_read_reg(LSM303D_WHO_AM_I);
+                     ^~~~~~~~~~~~
+                     _fread_r
+../src/main.c:58:34: error: 'LSM303D_WHO_AM_I' undeclared (first use in this function)
+  uint8_t who_am_i = lsm_read_reg(LSM303D_WHO_AM_I);
+                                  ^~~~~~~~~~~~~~~~
+../src/main.c:58:34: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:65:2: warning: implicit declaration of function 'lsm_write_reg'; did you mean '_fwrite_r'? [-Wimplicit-function-declaration]
+  lsm_write_reg(LSM303D_CTRL5, 0x80|0x10); // TEMP_EN | M_ODR2 (50Hz)
+  ^~~~~~~~~~~~~
+  _fwrite_r
+../src/main.c:65:16: error: 'LSM303D_CTRL5' undeclared (first use in this function); did you mean 'LSM303D_WHO_AM_I'?
+  lsm_write_reg(LSM303D_CTRL5, 0x80|0x10); // TEMP_EN | M_ODR2 (50Hz)
+                ^~~~~~~~~~~~~
+                LSM303D_WHO_AM_I
+../src/main.c:67:2: warning: implicit declaration of function 'delay_ms' [-Wimplicit-function-declaration]
+  delay_ms(100);
+  ^~~~~~~~
+../src/main.c:70:18: warning: implicit declaration of function 'lsm_read_value' [-Wimplicit-function-declaration]
+   int16_t temp = lsm_read_value(LSM303D_TEMP_OUT);
+                  ^~~~~~~~~~~~~~
+../src/main.c:70:33: error: 'LSM303D_TEMP_OUT' undeclared (first use in this function); did you mean 'LSM303D_CTRL5'?
+   int16_t temp = lsm_read_value(LSM303D_TEMP_OUT);
+                                 ^~~~~~~~~~~~~~~~
+                                 LSM303D_CTRL5
+make: *** [src/main.o] Error 1
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+
+11:54:17 Build Finished (took 939ms)
+

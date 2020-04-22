@@ -1,0 +1,63 @@
+13:46:38 **** Incremental Build of configuration Debug for project test11 ****
+make -j2 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/laseczka/workspace/test11/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -I"/home/laseczka/workspace/test11/Utilities/STM32F1xx-Nucleo" -I"/home/laseczka/workspace/test11/StdPeriph_Driver/inc" -I"/home/laseczka/workspace/test11/inc" -I"/home/laseczka/workspace/test11/CMSIS/device" -I"/home/laseczka/workspace/test11/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:23:2: warning: implicit declaration of function 'HAL_Init'; did you mean 'DAC_Init'? [-Wimplicit-function-declaration]
+  HAL_Init();
+  ^~~~~~~~
+  DAC_Init
+../src/main.c:25:2: warning: implicit declaration of function '__HAL_RCC_GPIOA_CLK_ENABLE' [-Wimplicit-function-declaration]
+  __HAL_RCC_GPIOA_CLK_ENABLE();
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:28:6: error: 'GPIO_InitTypeDef {aka struct <anonymous>}' has no member named 'Pin'
+  gpio.Pin = GPIO_PIN_5;     // konfigurujemy pin 5
+      ^
+../src/main.c:28:13: error: 'GPIO_PIN_5' undeclared (first use in this function); did you mean 'GPIO_Pin_5'?
+  gpio.Pin = GPIO_PIN_5;     // konfigurujemy pin 5
+             ^~~~~~~~~~
+             GPIO_Pin_5
+../src/main.c:28:13: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:29:6: error: 'GPIO_InitTypeDef {aka struct <anonymous>}' has no member named 'Mode'
+  gpio.Mode = GPIO_MODE_OUTPUT_PP; // jako wyjście
+      ^
+../src/main.c:29:14: error: 'GPIO_MODE_OUTPUT_PP' undeclared (first use in this function); did you mean 'GPIO_Mode_Out_PP'?
+  gpio.Mode = GPIO_MODE_OUTPUT_PP; // jako wyjście
+              ^~~~~~~~~~~~~~~~~~~
+              GPIO_Mode_Out_PP
+../src/main.c:30:6: error: 'GPIO_InitTypeDef {aka struct <anonymous>}' has no member named 'Pull'
+  gpio.Pull = GPIO_NOPULL;   // rezystory podciągające są wyłączone
+      ^
+../src/main.c:30:14: error: 'GPIO_NOPULL' undeclared (first use in this function)
+  gpio.Pull = GPIO_NOPULL;   // rezystory podciągające są wyłączone
+              ^~~~~~~~~~~
+../src/main.c:31:7: error: 'GPIO_InitTypeDef {aka struct <anonymous>}' has no member named 'Speed'; did you mean 'GPIO_Speed'?
+  gpio.Speed = GPIO_SPEED_FREQ_LOW; // wystarczą nieskie częstotliwości przełączania
+       ^~~~~
+       GPIO_Speed
+../src/main.c:31:15: error: 'GPIO_SPEED_FREQ_LOW' undeclared (first use in this function)
+  gpio.Speed = GPIO_SPEED_FREQ_LOW; // wystarczą nieskie częstotliwości przełączania
+               ^~~~~~~~~~~~~~~~~~~
+../src/main.c:32:2: warning: implicit declaration of function 'HAL_GPIO_Init'; did you mean 'GPIO_Init'? [-Wimplicit-function-declaration]
+  HAL_GPIO_Init(GPIOA, &gpio);  // inicjalizacja modułu GPIOA
+  ^~~~~~~~~~~~~
+  GPIO_Init
+../src/main.c:36:3: warning: implicit declaration of function 'HAL_GPIO_WritePin'; did you mean 'GPIO_WriteBit'? [-Wimplicit-function-declaration]
+   HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET); // zapalenie diody
+   ^~~~~~~~~~~~~~~~~
+   GPIO_WriteBit
+../src/main.c:36:40: error: 'GPIO_PIN_SET' undeclared (first use in this function); did you mean 'GPIO_PIN_5'?
+   HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET); // zapalenie diody
+                                        ^~~~~~~~~~~~
+                                        GPIO_PIN_5
+../src/main.c:38:40: error: 'GPIO_PIN_RESET' undeclared (first use in this function); did you mean 'GPIO_PIN_SET'?
+   HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET); // zgaszenie diody
+                                        ^~~~~~~~~~~~~~
+                                        GPIO_PIN_SET
+make: *** [src/main.o] Error 1
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+
+13:46:39 Build Finished (took 1s.38ms)
+

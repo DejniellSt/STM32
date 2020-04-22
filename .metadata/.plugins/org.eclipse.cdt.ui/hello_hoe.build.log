@@ -1,0 +1,11 @@
+23:21:53 **** Incremental Build of configuration Debug for project hello_hoe ****
+make all 
+Building file: ../src/hello_hoe.cpp
+Invoking: Cross G++ Compiler
+arm-none-eabi-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/hello_hoe.d" -MT"src/hello_hoe.o" -o "src/hello_hoe.o" "../src/hello_hoe.cpp"
+/bin/sh: 1: arm-none-eabi-g++: not found
+make: *** [src/hello_hoe.o] Error 127
+src/subdir.mk:18: recipe for target 'src/hello_hoe.o' failed
+
+23:21:53 Build Finished (took 779ms)
+

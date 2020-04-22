@@ -1,0 +1,9 @@
+18:06:45 **** Incremental Build of configuration Debug for project temp ****
+make -j2 all 
+Cannot run program "make": Unknown reason
+
+Error: Program "make" not found in PATH
+PATH=[/home/laseczka/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin]
+
+18:06:45 Build Finished (took 8ms)
+
